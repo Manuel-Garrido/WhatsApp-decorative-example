@@ -1,5 +1,5 @@
 # WhatsApp-decorative-example
-Descripción Profesional:
+Descripción:
 Este repositorio es una herramienta de aprendizaje ideal para aquellos que desean perfeccionar sus habilidades en diseño web utilizando las propiedades de FlexBox y las unidades de medida VH/VW. El proyecto consiste en una simulación estática del diseño de la interfaz de usuario de WhatsApp Web, enfocado exclusivamente en el front-end y sin interacción funcional.
 
 Características Destacadas:
