@@ -1,9 +1,11 @@
+/* Estilo para resetear márgenes, rellenos y cajas del modelo de caja */
 *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
 
+/* Estilo para el cuerpo de la página */
 body{
     font-family: fantasy;
     font-size: 1vw;
@@ -11,35 +13,39 @@ body{
     height: 100vh;
 }
 
+/* Estilo para el contenedor principal */
 #total{
     width: 90%;
     margin: 0 auto;
 }
 
+/* Estilo para el encabezado */
 header{
     display: flex;
     flex-direction: row;
     background-color: lightgray;
     margin-top: 2vh;
-    
     width: 100%;
     margin-right: 2vw;
     padding: 0.8vh;
     border: 1px solid gray;
 }
+
+/* Estilo para el contenido principal */
 main{
     display: flex;
     flex-direction: row;
     width: 100%;
     margin-bottom: 2vh;
 }
+
+/* Estilo para la barra de navegación lateral */
 nav{
     width: 50%;
     border: 1px solid gray;
 }
 
-
-
+/* Estilo para el encabezado izquierdo */
 #left-header{
     display: flex;
     flex-direction: row;
@@ -48,6 +54,7 @@ nav{
     width: 50%;
 }
 
+/* Estilo para las imágenes en el encabezado izquierdo, derecho y de chats */
 #left-header img, #right-header img, #chats img{
     width: 10vw;
     height: 10vh;
@@ -56,28 +63,24 @@ nav{
     margin-right: 1vw;
 }
 
+/* Estilo para los íconos en el encabezado izquierdo */
 #left-iconos{
     display: flex;
     flex-direction: row;
-    justify-content: right;
+    justify-content: flex-end;
     width: 80%;
 }
 
-#left-iconos *{
-    padding-right: 3vw;
-}
-
+/* Estilo para los elementos en el encabezado derecho */
 #right-header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}
-
-#right-header{
     width: 46%;
 }
 
+/* Estilo para el contenedor de chats */
 #chats{
     background-color: aliceblue;
     width: 100%;
@@ -85,24 +88,29 @@ nav{
     max-height: 78vh;
 }
 
+/* Estilo para cada chat individual */
 .chat{
     border: 1px solid lightgray;
 }
 
+/* Estilo para los encabezados de los chats */
 .chat h3{
     color: black;
 }
 
+/* Estilo para las imágenes en los chats */
 .chat img{
     padding-right: 1vw;
 }
 
+/* Estilo para los elementos en la parte derecha de los chats y los mensajes */
 #right-leftElements, .chat-message{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
+/* Estilo para los íconos en la parte derecha */
 #right-iconos{
     display: flex;
     flex-direction: row;
@@ -110,6 +118,7 @@ nav{
     width: 10%;
 }
 
+/* Estilo para la barra superior de navegación */
 #nav-upper{
     display: flex;
     flex-direction: row;
@@ -118,49 +127,57 @@ nav{
     border: 1px solid lightgray;
 }
 
+/* Estilo para los elementos en la barra superior de navegación */
 #nav-upper *{
     padding: 2vh;
     background-color: lightgray;
 }
 
+/* Estilo para los botones en la barra superior de navegación */
 #nav-upper button{
     width: 20%;
 }
 
+/* Estilo para el efecto hover en los botones de la barra superior de navegación */
 #nav-upper button:hover{
     background-color: gray;
     cursor: pointer;
 }
 
+/* Estilo para el campo de entrada en la barra superior de navegación */
 #nav-upper input{
     width: 80%;
     border: 1px solid gray;
     font-size: 1vw;
 }
 
+/* Estilo para los enlaces de chat */
 .chat a{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     width: 100%;
     text-decoration: none;
     color: gray;
     padding: 1vw;
 }
 
+/* Estilo para el efecto hover en los enlaces de chat */
 .chat a:hover{
     background-color: rgb(194, 170, 170);
 }
 
+/* Estilo para el contenedor de mensajes */
 #messages{
     width: 50%;
     background-image: url(../imagenes/chatfondo.jpg);
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     max-height: 85vh;
     overflow-y: scroll;
 }
 
+/* Estilo para los mensajes enviados por otros y por uno mismo */
 .message-others, .message-yours{
     border-radius: 5%;
     margin: 0.8vh;
@@ -169,18 +186,22 @@ nav{
     padding: 1vw;
 }
 
+/* Estilo para los mensajes enviados por otros */
 .message-others{
     float: left;
     background-color: white;
     width: 50%;
 }
 
+/* Estilo para los mensajes enviados por uno mismo */
 .message-yours{
     float: right;
     background-color: rgb(0, 255, 0);
     width: 50%;
 }
 
+/* Estilo para la hora de los mensajes */
 .hora{
     float: right;
 }
+
